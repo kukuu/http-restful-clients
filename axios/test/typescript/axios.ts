@@ -40,7 +40,7 @@ const config: AxiosRequestConfig = {
   maxRedirects: 5,
   proxy: {
     host: '127.0.0.1',
-    port: 9000
+    port: 8000
   },
   cancelToken: new axios.CancelToken((cancel: Canceler) => {})
 };
