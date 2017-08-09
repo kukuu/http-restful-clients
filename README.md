@@ -7,5 +7,7 @@
 2. GraphQL - GraphQL is an application layer query language that interprets a string by a server, which then returns the required data in a specified format.
 The response format is described in the query and defined by the client instead of the server: they are called client‐specified queries.
 
+3. To execute any of the applications, first run mpm install where you find package.json file.
+
 
 
