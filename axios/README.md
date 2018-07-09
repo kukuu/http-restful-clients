@@ -13,7 +13,3 @@ Promise based HTTP client for the browser and node.js . Axios depends on a nativ
 - Automatic transforms for JSON data
 - Client side support for protecting against [XSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery)
 
-## Configuration and Support: 
-
-See https://github.com/kukuu/axios/client/CONFIGURATION-FEATURES.md
-
