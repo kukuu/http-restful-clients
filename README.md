@@ -43,5 +43,20 @@ The response format is described in the query and defined by the client instead 
 
 3. To execute any of the applications, first run mpm install where you find package.json file.
 
+## Key Principles for developing APIs
 
+- RESTful Design & Intuitive Endpoints:
+ Structure your API around resources (nouns, not verbs) using logical, hierarchical endpoints (e.g., /users/{id}/orders) and leverage standard HTTP methods (GET, POST, PUT, DELETE) for operations to ensure predictability and discoverability.
+
+- Robust Security by Default:
+ Implement strong authentication (e.g., OAuth 2.0, API keys) and authorization, mandate HTTPS for all communications, rigorously validate and sanitize all input to prevent injection attacks, and employ rate limiting to protect against abuse and ensure availability.
+
+- Consistent Versioning & Schema:
+
+Version your API from the start (e.g., in the URL /v1/resource or headers) to manage breaking changes without disrupting existing consumers. Maintain consistent request/response formats using standards like JSON and OpenAPI/Swagger for documentation.
+
+- Clear, Actionable Error Handling: 
+Use standard HTTP status codes to indicate success or failure (e.g., 200, 400, 404, 500) and provide consistent, human-readable error messages in the response body with details (e.g., error code, message, potential resolution) to aid developer debugging.
+
+- Performance & Developer Experience (DX): Support filtering, sorting, pagination, and field selection to allow clients to request only the data they need, reducing payload size and improving efficiency. Comprehensive, interactive documentation is non-negotiable for a positive developer onboarding experience.
 
